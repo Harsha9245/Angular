@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+<br>
+<div class=" row justify-content-center align-items-center">
+
+<button class="btn btn-success" (click)="displayMovies()">Display Movies</button>
+</div>
+    <div class=" row justify-content-center align-items-center">
+    <ul>
+        <li *ngFor="let res of result">
+            <h6>Movie Name:</h6>
+           {{res.movie_Id}}
+            {{res.movie_Name}}
+            <h6>Genre:</h6>
+            {{res.genre}}
+            <h6>Director:</h6>
+            {{res.director}}
+        </li>
+    </ul>
+</div>
+   
